@@ -1,9 +1,9 @@
 // Nashir Nizamudeen 251ADB122
 // https://github.com/nashirnizam59-ops/calc-lab-home
 // Compile with: gcc -O2 -Wall -Wextra -std=c17 -o calc calc.c -lm
-// Resources used: ChatGPT (this conversation) and the supplied lab instructions.
-// AI prompt: "Help me implement and understand the arithmetic parser lab in C."
-
+// Resources used: supplied arithmetic-parser lab instructions; OpenAI ChatGPT (this conversation).
+// AI assistance: ChatGPT drafted the initial implementation and provided explanations.
+// Prompt (paraphrased): Implement the arithmetic parser described in the supplied lab specification in a single C source file.
 #include <ctype.h>
 #include <dirent.h>
 #include <errno.h>
