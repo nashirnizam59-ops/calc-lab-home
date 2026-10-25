@@ -1,0 +1,121 @@
+AI DISCUSSION SUMMARY
+Professional paraphrase of the actual conversation
+
+Student: Nashir Nizamudeen
+Student ID: 251ADB122
+AI tool: OpenAI ChatGPT, accessed through Codex
+Assignment: Arithmetic Parser in C
+
+This document summarizes the relevant exchanges in professional wording.
+The requests and responses below are paraphrases, rather than verbatim quotes.
+The source code and interface-navigation discussion are not reproduced.
+
+1. Implementation assistance
+
+Student request, paraphrased:
+Provide an implementation of the arithmetic parser based on the supplied
+lab specification.
+
+Assistant response, summarized:
+ChatGPT drafted an initial calc.c implementation with recursive-descent parsing,
+integer and floating-point arithmetic, error-position tracking, file processing,
+and command-line handling. The implementation included explanatory comments
+and the student's identifying details.
+
+2. Building the implementation
+
+Student request, paraphrased:
+Explain the next step after saving calc.c in GitHub Codespaces.
+
+Assistant response, summarized:
+Compile the source using the exact command required by the lab:
+
+gcc -O2 -Wall -Wextra -std=c17 -o calc calc.c -lm
+
+The student supplied terminal output showing the command completing without
+compiler diagnostics.
+
+3. Source file and executable
+
+Student request, paraphrased:
+Explain why both calc.c and calc appear in the project.
+
+Assistant response, summarized:
+calc.c is the source file assessed by the lab. calc is the executable produced
+by the compiler and is used to run the sample tests.
+
+4. Running the supplied tests
+
+Student request, paraphrased:
+Explain how to use the provided calc-tests.zip archive.
+
+Assistant response, summarized:
+Upload the archive to the Codespace, extract it beside calc.c, and run:
+
+sh calc-tests/run_tests.sh ./calc
+sh calc-tests/cli.sh ./calc
+
+Reported results:
+The expression tests reported 44 passed and 0 failed.
+All 12 command-line tests passed.
+
+5. Sanitizer verification
+
+Student request, paraphrased:
+Explain the next verification step after the sample tests passed.
+
+Assistant response, summarized:
+Build with the sanitizer command specified by the lab:
+
+gcc -O1 -g -Wall -Wextra -std=c17 -fsanitize=address,undefined -o calc calc.c -lm
+
+Repeat both supplied test scripts using that executable.
+
+Reported results:
+The sanitizer build completed without compiler diagnostics.
+The 44 expression tests and all 12 command-line tests passed again.
+No sanitizer diagnostics were reported in the supplied results.
+
+6. Resource citations
+
+Student request, paraphrased:
+Explain how to acknowledge the AI assistance clearly and professionally in
+the source file.
+
+Assistant response, summarized:
+List the supplied lab instructions and ChatGPT as resources in the header.
+State that ChatGPT drafted the initial implementation. Describe the request
+as a paraphrase when it is not reproduced verbatim.
+
+The student updated the header and rebuilt the source. The reported build
+completed without compiler diagnostics.
+
+7. Conversation-history requirement
+
+Student request, paraphrased:
+Clarify whether the AI citation alone satisfies the lab requirements.
+
+Assistant response, summarized:
+The assignment separately requires an AI conversation history. Its delivery
+format is not specified in the handout. The student subsequently reported
+that the instructor accepted an AI-use summary.
+
+8. Submission procedure
+
+Student request, paraphrased:
+Explain how to commit the completed source and obtain the submission link.
+
+Assistant response, summarized:
+Stage calc.c, commit the changes, and push them to GitHub. Open the latest
+commit on GitHub and copy its full commit URL for the course submission.
+
+Commit provided by the student:
+https://github.com/nashirnizam59-ops/calc-lab-home/commit/fa2c80a029cf77955c0355f04ff082fcba7fa1b1
+
+Resource statement
+ChatGPT provided the initial implementation, explanatory comments, and guidance
+on building, testing, citations, and submission. Compilation and test execution
+were performed by the student in GitHub Codespaces.
+
+This document is a paraphrased summary of the discussion, not a complete or
+verbatim transcript.
